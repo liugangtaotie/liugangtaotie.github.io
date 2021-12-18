@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# 1、创建并进入一个新目录
 
-You can use the [editor on GitHub](https://github.com/liugangtaotie/liugangtaotie.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+mkdir vuepress-starter && cd vuepress-starter
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# 2、使用你喜欢的包管理器进行初始化
 
-### Markdown
+yarn init # npm init
+将 VuePress 安装为本地依赖
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# 3、我们已经不再推荐全局安装 VuePress
 
-```markdown
-Syntax highlighted code block
+yarn add -D vuepress # npm install -D vuepress
+注意
 
-# Header 1111
-## Header 2
-### Header 3
+# 4、如果你的现有项目依赖了 webpack 3.x，我们推荐使用 Yarn 而不是 npm 来安装 VuePress。因为在这种情形下，npm 会生成错误的依赖树。
 
-- Bulleted
-- List
+创建你的第一篇文档
 
-1. Numbered
-2. List
+mkdir docs && echo '# Hello VuePress' > docs/README.md
+在 package.json 中添加一些 scripts
 
-**Bold** and _Italic_ and `Code` text
+# 5、这一步骤是可选的，但我们推荐你完成它。在下文中，我们会默认这些 scripts 已经被添加。
 
-[Link](url) and ![Image](src)
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
+# 6、在本地启动服务器
+
+yarn docs:dev # npm run docs:dev
+VuePress 会在 http://localhost:8080 启动一个热重载的开发服务器。
+
+# 7、文档如何打包发布
+``` bash
+1、打包流程解析
+
+A、当前分支的源代码：npm run docs:build / make pro  生成dist 文件;
+
+B、需要另外一个项目：http://jkcs.common.com.cn/learning/h5/h5-document-dist.git ;
+
+
+2、打包对应jenkins/rancher
+
+开发环境：jenkins->http://jenkins.atag.common.com.cn/ 项目名称：dev->hc-h5-document-dist
+
+        Rancher->http://rancher.atag.common.com.cn/env/1a5/apps/stacks 项目名称：dev->h5-document->hc-h5-document-dist
+
+        开发分支：master 对应 h5-document-dist: master
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/liugangtaotie/liugangtaotie.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
