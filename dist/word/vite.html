@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第三章、vite | 大前端技术交流文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="大前端技术交流文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.1d48eac9.css" as="style"><link rel="preload" href="/assets/js/app.1209b5ce.js" as="script"><link rel="preload" href="/assets/js/4.de537007.js" as="script"><link rel="preload" href="/assets/js/1.f2ff10e3.js" as="script"><link rel="preload" href="/assets/js/74.6bf76e46.js" as="script"><link rel="prefetch" href="/assets/js/10.6081436e.js"><link rel="prefetch" href="/assets/js/11.d773a070.js"><link rel="prefetch" href="/assets/js/12.0b500a33.js"><link rel="prefetch" href="/assets/js/13.73f481d0.js"><link rel="prefetch" href="/assets/js/14.bab09012.js"><link rel="prefetch" href="/assets/js/15.8d1c1400.js"><link rel="prefetch" href="/assets/js/16.f5a11792.js"><link rel="prefetch" href="/assets/js/17.50b16102.js"><link rel="prefetch" href="/assets/js/18.42729e94.js"><link rel="prefetch" href="/assets/js/19.ab66d78b.js"><link rel="prefetch" href="/assets/js/20.c8e99e53.js"><link rel="prefetch" href="/assets/js/21.6abe2606.js"><link rel="prefetch" href="/assets/js/22.d662a6b7.js"><link rel="prefetch" href="/assets/js/23.0b75c54b.js"><link rel="prefetch" href="/assets/js/24.b091d7d3.js"><link rel="prefetch" href="/assets/js/25.8ef6d76e.js"><link rel="prefetch" href="/assets/js/26.4bf8b9ed.js"><link rel="prefetch" href="/assets/js/27.88984930.js"><link rel="prefetch" href="/assets/js/28.0ff9642c.js"><link rel="prefetch" href="/assets/js/29.1e044577.js"><link rel="prefetch" href="/assets/js/3.6148232d.js"><link rel="prefetch" href="/assets/js/30.3dfd05ec.js"><link rel="prefetch" href="/assets/js/31.0346911c.js"><link rel="prefetch" href="/assets/js/32.64065ea8.js"><link rel="prefetch" href="/assets/js/33.a5339ea5.js"><link rel="prefetch" href="/assets/js/34.40a6dd03.js"><link rel="prefetch" href="/assets/js/35.66f4cd75.js"><link rel="prefetch" href="/assets/js/36.417fe643.js"><link rel="prefetch" href="/assets/js/37.ea43d481.js"><link rel="prefetch" href="/assets/js/38.42551438.js"><link rel="prefetch" href="/assets/js/39.d1504611.js"><link rel="prefetch" href="/assets/js/40.c5969b98.js"><link rel="prefetch" href="/assets/js/41.2fdd2486.js"><link rel="prefetch" href="/assets/js/42.ff9a85d8.js"><link rel="prefetch" href="/assets/js/43.1d1834a0.js"><link rel="prefetch" href="/assets/js/44.a10f37da.js"><link rel="prefetch" href="/assets/js/45.65fb8fa4.js"><link rel="prefetch" href="/assets/js/46.e59819cd.js"><link rel="prefetch" href="/assets/js/47.454685dd.js"><link rel="prefetch" href="/assets/js/48.6f195d2d.js"><link rel="prefetch" href="/assets/js/49.5a83d381.js"><link rel="prefetch" href="/assets/js/5.157bb445.js"><link rel="prefetch" href="/assets/js/50.a6a5d7e0.js"><link rel="prefetch" href="/assets/js/51.17652247.js"><link rel="prefetch" href="/assets/js/52.106da2d2.js"><link rel="prefetch" href="/assets/js/53.01735601.js"><link rel="prefetch" href="/assets/js/54.771be319.js"><link rel="prefetch" href="/assets/js/55.eda87db7.js"><link rel="prefetch" href="/assets/js/56.d5b10fc7.js"><link rel="prefetch" href="/assets/js/57.f6bc4899.js"><link rel="prefetch" href="/assets/js/58.a2fd2751.js"><link rel="prefetch" href="/assets/js/59.67cb09e1.js"><link rel="prefetch" href="/assets/js/6.c8b06e7c.js"><link rel="prefetch" href="/assets/js/60.37d60db8.js"><link rel="prefetch" href="/assets/js/61.26443320.js"><link rel="prefetch" href="/assets/js/62.d9eead19.js"><link rel="prefetch" href="/assets/js/63.5b123747.js"><link rel="prefetch" href="/assets/js/64.900aea21.js"><link rel="prefetch" href="/assets/js/65.43c4754f.js"><link rel="prefetch" href="/assets/js/66.0b1051c6.js"><link rel="prefetch" href="/assets/js/67.95c6261b.js"><link rel="prefetch" href="/assets/js/68.a509e22c.js"><link rel="prefetch" href="/assets/js/69.f834850c.js"><link rel="prefetch" href="/assets/js/7.c5ec4ce9.js"><link rel="prefetch" href="/assets/js/70.8579497f.js"><link rel="prefetch" href="/assets/js/71.5b1bfaed.js"><link rel="prefetch" href="/assets/js/72.03d2bd11.js"><link rel="prefetch" href="/assets/js/73.1ff8867b.js"><link rel="prefetch" href="/assets/js/75.8fa435cf.js"><link rel="prefetch" href="/assets/js/76.bd035b49.js"><link rel="prefetch" href="/assets/js/8.93917932.js"><link rel="prefetch" href="/assets/js/9.9797576c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1d48eac9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2a0acbb5><div data-v-2a0acbb5><div class="password-shadow password-wrapper-out" style="display:none;" data-v-6afaaa56 data-v-2a0acbb5 data-v-2a0acbb5><h3 class="title" data-v-6afaaa56>大前端技术交流文档</h3> <p class="description" data-v-6afaaa56>大前端技术交流文档</p> <label id="box" class="inputBox" data-v-6afaaa56><input type="password" value="" data-v-6afaaa56> <span data-v-6afaaa56>Konck! Knock!</span> <button data-v-6afaaa56>OK</button></label> <div class="footer" data-v-6afaaa56><span data-v-6afaaa56><i class="iconfont reco-theme" data-v-6afaaa56></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6afaaa56>vuePress-theme-reco</a></span> <span data-v-6afaaa56><i class="iconfont reco-copyright" data-v-6afaaa56></i> <a data-v-6afaaa56><span data-v-6afaaa56>wuxiang</span>
+          
+        <span data-v-6afaaa56>2020 - </span>
+        2023
+      </a></span></div></div> <div class="hide" data-v-2a0acbb5><header class="navbar" data-v-2a0acbb5><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/frontender.png" alt="大前端技术交流文档" class="logo"> <span class="site-name">大前端技术交流文档</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/word/vite-libs.html" class="nav-link"><i class="undefined"></i>
+  日常
+</a></li><li class="dropdown-item"><!----> <a href="/other/shields.html" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/schedule/2022.html" class="nav-link"><i class="undefined"></i>
+  计划
+</a></li><li class="dropdown-item"><!----> <a href="/attention/one.html" class="nav-link"><i class="undefined"></i>
+  关注
+</a></li><li class="dropdown-item"><!----> <a href="/cultural/zhuangzi.html" class="nav-link"><i class="undefined"></i>
+  文化
+</a></li><li class="dropdown-item"><!----> <a href="/architecture/essence.html" class="nav-link"><i class="undefined"></i>
+  架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/js-native.html" class="nav-link"><i class="undefined"></i>
+  JS-Native
+</a></li><li class="dropdown-item"><!----> <a href="/document/app-qr-code.html" class="nav-link"><i class="undefined"></i>
+  app-qr-code
+</a></li><li class="dropdown-item"><!----> <a href="/document/miniapp-qr-code.html" class="nav-link"><i class="undefined"></i>
+  miniapp-qr-code
+</a></li><li class="dropdown-item"><!----> <a href="/document/docking-document.html" class="nav-link"><i class="undefined"></i>
+  docking-document
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      代码规范
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/codeDoc/git-doc.html" class="nav-link"><i class="undefined"></i>
+  git-使用规范
+</a></li><li class="dropdown-item"><!----> <a href="/codeDoc/ios-doc.html" class="nav-link"><i class="undefined"></i>
+  iOS-代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/codeDoc/h5-doc.html" class="nav-link"><i class="undefined"></i>
+  h5-代码规范
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://liugangtaotie.github.io/d3-tree-example/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  d3
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://liugangtaotie.github.io/h5-document-vite-web/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  widget
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-github"></i>
+      gitlab
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/liugangtaotie/h5-document.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  main
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2a0acbb5></div> <aside class="sidebar" data-v-2a0acbb5><div class="personal-info-wrapper" data-v-3382c467 data-v-2a0acbb5><img src="/leaf.png" alt="author-avatar" class="personal-img" data-v-3382c467> <h3 class="name" data-v-3382c467>
+    wuxiang
+  </h3> <div class="num" data-v-3382c467><div data-v-3382c467><h3 data-v-3382c467>66</h3> <h6 data-v-3382c467>Articles</h6></div> <div data-v-3382c467><h3 data-v-3382c467>7</h3> <h6 data-v-3382c467>Tags</h6></div></div> <ul class="social-links" data-v-3382c467></ul> <hr data-v-3382c467></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/word/vite-libs.html" class="nav-link"><i class="undefined"></i>
+  日常
+</a></li><li class="dropdown-item"><!----> <a href="/other/shields.html" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/schedule/2022.html" class="nav-link"><i class="undefined"></i>
+  计划
+</a></li><li class="dropdown-item"><!----> <a href="/attention/one.html" class="nav-link"><i class="undefined"></i>
+  关注
+</a></li><li class="dropdown-item"><!----> <a href="/cultural/zhuangzi.html" class="nav-link"><i class="undefined"></i>
+  文化
+</a></li><li class="dropdown-item"><!----> <a href="/architecture/essence.html" class="nav-link"><i class="undefined"></i>
+  架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-api"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/js-native.html" class="nav-link"><i class="undefined"></i>
+  JS-Native
+</a></li><li class="dropdown-item"><!----> <a href="/document/app-qr-code.html" class="nav-link"><i class="undefined"></i>
+  app-qr-code
+</a></li><li class="dropdown-item"><!----> <a href="/document/miniapp-qr-code.html" class="nav-link"><i class="undefined"></i>
+  miniapp-qr-code
+</a></li><li class="dropdown-item"><!----> <a href="/document/docking-document.html" class="nav-link"><i class="undefined"></i>
+  docking-document
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      代码规范
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/codeDoc/git-doc.html" class="nav-link"><i class="undefined"></i>
+  git-使用规范
+</a></li><li class="dropdown-item"><!----> <a href="/codeDoc/ios-doc.html" class="nav-link"><i class="undefined"></i>
+  iOS-代码规范
+</a></li><li class="dropdown-item"><!----> <a href="/codeDoc/h5-doc.html" class="nav-link"><i class="undefined"></i>
+  h5-代码规范
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://liugangtaotie.github.io/d3-tree-example/#/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  d3
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://liugangtaotie.github.io/h5-document-vite-web/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  widget
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-github"></i>
+      gitlab
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/liugangtaotie/h5-document.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  main
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/word/vite-libs.html" class="sidebar-link">第三十三章、use-vite-for-javascript-libraries</a></li><li><a href="/word/data-visualization.html" class="sidebar-link">第三十二章、数据可视化</a></li><li><a href="/word/d3.html" class="sidebar-link">第三十一章、d3</a></li><li><a href="/word/v8.html" class="sidebar-link">第三十章、v8</a></li><li><a href="/word/handwriting-vite.html" class="sidebar-link">第二十九章、手写vite</a></li><li><a href="/word/vue-ssr.html" class="sidebar-link">第二十八章、vue-ssr</a></li><li><a href="/word/module-federation.html" class="sidebar-link">第二十七章、module-federation</a></li><li><a href="/word/web-component.html" class="sidebar-link">第二十六章、webComponent</a></li><li><a href="/word/micro-app.html" class="sidebar-link">第二十五章、micro-app</a></li><li><a href="/word/qiankun.html" class="sidebar-link">第二十四章、qiankun</a></li><li><a href="/word/ios-h5.html" class="sidebar-link">第二十三章、ios-h5</a></li><li><a href="/word/block-inline-element.html" class="sidebar-link">第二十二章、行内元素和块级元素</a></li><li><a href="/word/babel.html" class="sidebar-link">第二十一章、babel</a></li><li><a href="/word/auto-deploy.html" class="sidebar-link">第二十章、自动化部署</a></li><li><a href="/word/ceiling-scheme.html" class="sidebar-link">第十九章、基于vue的吸顶方案</a></li><li><a href="/word/css-var.html" class="sidebar-link">第十八章、vue3选择css变量</a></li><li><a href="/word/debounce.html" class="sidebar-link">第十七章、vue3防抖</a></li><li><a href="/word/multi-end-unified.html" class="sidebar-link">第十六章、多端统一</a></li><li><a href="/word/read-statistic.html" class="sidebar-link">第十五章、文档阅读量统计</a></li><li><a href="/word/d2.html" class="sidebar-link">第十四章、D2</a></li><li><a href="/word/static-online-img.html" class="sidebar-link">第十三章、添加站点图片</a></li><li><a href="/word/subpackage.html" class="sidebar-link">第十二章、uniapp优化策略</a></li><li><a href="/word/applet-principle.html" class="sidebar-link">第十一章、微信小程序技术原理分析</a></li><li><a href="/word/applet-engine.html" class="sidebar-link">第十章、小程序引擎原理及实现</a></li><li><a href="/word/applet.html" class="sidebar-link">第九章、小程序</a></li><li><a href="/word/xx-common-ui.html" class="sidebar-link">第八章、私有组件库</a></li><li><a href="/word/npm-private-library.html" class="sidebar-link">第七章、npm私有库搭建</a></li><li><a href="/word/design-patterns.html" class="sidebar-link">第六章、设计模式</a></li><li><a href="/word/js.html" class="sidebar-link">第五章、js</a></li><li><a href="/word/event-loop.html" class="sidebar-link">第四章、event-loop</a></li><li><a href="/word/vite.html" aria-current="page" class="active sidebar-link">第三章、vite</a></li><li><a href="/word/wxmp-next.html" class="sidebar-link">第二章、xx-next-code</a></li><li><a href="/word/wxmp.html" class="sidebar-link">第一章、common</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6afaaa56 data-v-2a0acbb5><h3 class="title" data-v-6afaaa56>第三章、vite</h3> <!----> <label id="box" class="inputBox" data-v-6afaaa56><input type="password" value="" data-v-6afaaa56> <span data-v-6afaaa56>Konck! Knock!</span> <button data-v-6afaaa56>OK</button></label> <div class="footer" data-v-6afaaa56><span data-v-6afaaa56><i class="iconfont reco-theme" data-v-6afaaa56></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6afaaa56>vuePress-theme-reco</a></span> <span data-v-6afaaa56><i class="iconfont reco-copyright" data-v-6afaaa56></i> <a data-v-6afaaa56><span data-v-6afaaa56>wuxiang</span>
+          
+        <span data-v-6afaaa56>2020 - </span>
+        2023
+      </a></span></div></div> <div data-v-2a0acbb5><div data-v-2a0acbb5><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">第三章、vite</h1> <div data-v-4b52865a><i class="iconfont reco-account" data-v-4b52865a><span data-v-4b52865a>liugang</span></i> <i class="iconfont reco-date" data-v-4b52865a><span data-v-4b52865a>9/6/2020</span></i> <i class="iconfont reco-eye" data-v-4b52865a><span id="/word/vite.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-4b52865a><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-4b52865a><span class="tag-item" data-v-4b52865a>tag4</span></i></div></div> <div class="theme-reco-content content__default"><Boxx changeTime="5000"></Boxx> <h2 id="总方针-是什么-从哪里来-要到哪里去"><a href="#总方针-是什么-从哪里来-要到哪里去" class="header-anchor">#</a> 总方针：是什么？从哪里来？要到哪里去？</h2> <h2 id="一、是什么"><a href="#一、是什么" class="header-anchor">#</a> 一、是什么？</h2> <ul><li><p>vite ------- vue 作者尤雨溪开发的web开发工具</p></li> <li><p>它具有的特性：静态服务器、构建工具、轻量、开箱即用、极速模块热替换、内置Rollup 用于打包项目</p></li> <li><p>作者在微博上的发言：</p></li></ul> <p>Vite，一个基于浏览器原生 ES imports 的开发服务器。利用浏览器去解析 imports，在服务器端按需编译返回，完全跳过了打包这个概念，服务器随起随用。同时不仅有 Vue 文件支持，还搞定了热更新，而且热更新的速度不会随着模块增多而变慢。针对生产环境则可以把同一份代码用 rollup 打。虽然现在还比较粗糙，但这个方向我觉得是有潜力的，做得好可以彻底解决改一行代码等半天热更新的问题。</p> <p>它的主要特点：基于浏览器 native 的 ES module
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" target="_blank" rel="noopener noreferrer">ES module<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 来开发，省略打包这个步骤，因为需要什么资源直接在浏览器里引入即可。</p> <p>本质上是用C++ / Rust / Go 重写了依赖分析/模块构建能力，但是充分利用了已有的生态，使得开发成本极大降低。</p> <h2 id="二、从哪里来"><a href="#二、从哪里来" class="header-anchor">#</a> 二、从哪里来？</h2> <ul><li><p>时下热门的打包构建工具有：parcel 、 rollup（es module/ tree shaking） 、 webpack(最强的性能、扩展能力强)</p></li> <li><p>2.1 如何食用</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># npm 6.x
+npm init @vitejs/app &lt;project-name&gt; --template vue
+
+# npm 7+, extra double-dash is needed:
+npm init @vitejs/app &lt;project-name&gt; --template vue
+
+# yarn
+yarn create @vitejs/app &lt;project-name&gt; --template vue
+
+ cd &lt;project-name&gt;
+
+ npm install (or `yarn`)
+
+ npm run dev (or `yarn dev`)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li><p>2.2 背后的原理</p></li> <li><p>2.2.1 如何去掉打包步骤？</p></li></ul> <p>打包的概念是开发者利用打包工具将应用各个模块集合在一起形成 bundle，以一定规则读取模块的代码——以便在不支持模块化的浏览器里使用。</p> <p>为了在浏览器里加载各模块，打包工具会借助胶水代码用来组装各模块，比如 webpack 使用 map存放模块 id 和路径，使用 <strong>webpack_require</strong> 方法获取模块导出。</p> <p>vite 利用浏览器原生支持模块化导入这一特性，省略了对模块的组装，也就不需要生成 bundle，所以打包这一步就可以省略了。</p> <ul><li>2.2.2 如何实现按需加载？</li></ul> <p>webpack 之类的打包工具会将各模块提前打包进 bundle 里，但打包的过程是静态的——不管某个模块的代码是否执行到，这个模块都要打包到 bundle 里，这样的坏处就是随着项目越来越大打包后的 bundle 也越来越大。</p> <p>开发者为了减少 bundle 大小，会使用动态引入 import() 的方式异步的加载模块（ 被引入模块依然需要提前打包)，又或者使用 tree shaking 等方式尽力的去掉未引用的模块，然而这些方式都不如 vite 的优雅，vite 可以只在需要某个模块的时候动态（借助 import() ）的引入它，而不需要提前打包，虽然只能用在开发环境，不过这就够了。</p> <h2 id="三、要到哪里去"><a href="#三、要到哪里去" class="header-anchor">#</a> 三、要到哪里去？</h2> <p>正如尤大大所言：彻底解决改一行代码等半天热更新的问题。咱们配好料就等饺子下锅了，真香！</p> <h2 id="四、如何实践"><a href="#四、如何实践" class="header-anchor">#</a> 四、如何实践？</h2> <p>直接上干货：下面链接</p> <p><a href="https://jkcs.common.com.cn/learning/h5/vite2-vue2-vant2-ts" target="_blank" rel="noopener noreferrer">vite2-vue2-vant2-ts<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>搭建的这套框架，解决了几个前端经常遇到的问题：</p> <p>a. vite2实现开发环境秒级更新；</p> <p>b. 实现响应式布局，从而达到任意屏幕适配；</p> <p>c. 实现vant2 自定义主题色；</p> <p>d. 加入eslint、stylelint、prettier等插件，实现代码统一规范。</p> <h3 id="_4-1-开发环境秒级更新"><a href="#_4-1-开发环境秒级更新" class="header-anchor">#</a> 4.1 开发环境秒级更新</h3> <div class="language- extra-class"><pre><code> 上文已经做了解释，目前只关心实现效果：
+</code></pre></div><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1e1fbb9597064014a86ff0af579c5646~tplv-k3u1fbpfcp-watermark.image" alt="runtime.png"></p> <p>启动时间为757ms，基本是秒级更新。</p> <h3 id="_4-2-任意屏幕适配"><a href="#_4-2-任意屏幕适配" class="header-anchor">#</a> 4.2 任意屏幕适配</h3> <p>采用viewpoint方案：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 步骤一</span>
+npm i <span class="token operator">-</span><span class="token constant">D</span> postcss<span class="token operator">-</span>px<span class="token operator">-</span>to<span class="token operator">-</span>viewport
+
+<span class="token comment">// 步骤二，配置postcss.config.js文件</span>
+module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> file <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// autoprefixer: {},</span>
+      <span class="token string-property property">&quot;postcss-px-to-viewport&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">viewportWidth</span><span class="token operator">:</span> <span class="token number">375</span><span class="token punctuation">,</span> <span class="token comment">// 视口的宽度，对应的时设计稿的宽度/2，一般为750</span>
+        <span class="token literal-property property">unitToConvert</span><span class="token operator">:</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">viewportHeight</span><span class="token operator">:</span> <span class="token number">667</span><span class="token punctuation">,</span> <span class="token comment">// 视口的高度，对应的是设计稿的高度（也可以不配置）</span>
+        <span class="token literal-property property">unitPrecision</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token comment">// 指定‘px’转换为视口单位值的小数位数（很多时候无法整除）</span>
+        <span class="token literal-property property">propList</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;*&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// (Array)指定可以转换的css属性，默认是['*']，代表全部属性进行转换</span>
+        <span class="token literal-property property">viewportUnit</span><span class="token operator">:</span> <span class="token string">&quot;vw&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 指定需要转换成的视口单位，建议使用vw</span>
+        <span class="token literal-property property">fontViewportUnit</span><span class="token operator">:</span> <span class="token string">&quot;vw&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">selectorBlankList</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;ignore&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;tab-bar&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 指定不需要转换的类</span>
+        <span class="token literal-property property">minPixelValue</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// 小于或等于‘1px’不转换为视口单位</span>
+        <span class="token literal-property property">mediaQuery</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 允许在媒体查询中转换为‘px’</span>
+        <span class="token literal-property property">replace</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">landscape</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">landscapeUnit</span><span class="token operator">:</span> <span class="token string">&quot;vw&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">landscapeWidth</span><span class="token operator">:</span> <span class="token number">568</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 排除node_modules文件中第三方css文件</span>
+        <span class="token comment">// exclude: /(\/|\\)(node_modules)(\/|\\)/, // 排除node_modules文件中第三方css文件</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h3 id="_4-3-实现vant2-自定义主题色"><a href="#_4-3-实现vant2-自定义主题色" class="header-anchor">#</a> 4.3 实现vant2 自定义主题色</h3> <p><a href="https://github.com/youzan/vant/blob/dev/src/style/var.less" target="_blank" rel="noopener noreferrer">官网主题色<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 步骤一：官网复制theme.less文件到  src/assets/css/theme.less</span>
+
+<span class="token operator">...</span>
+<span class="token comment">// Tabs</span>
+@taxx<span class="token operator">-</span><span class="token keyword">default</span><span class="token operator">-</span>color<span class="token operator">:</span> @xx<span class="token operator">-</span>color<span class="token operator">-</span>primary<span class="token punctuation">;</span>
+<span class="token operator">...</span>
+
+<span class="token comment">// 步骤二：引入全局样式</span>
+
+<span class="token operator">...</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> xxx <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vant&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;vant/lib/index.less&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 全局引入样式</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>xxx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+
+<span class="token comment">// 步骤三：vite.config.ts</span>
+
+<span class="token operator">...</span>
+<span class="token keyword">import</span> path<span class="token punctuation">,</span> <span class="token punctuation">{</span> resolve <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;path&quot;</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+<span class="token operator">...</span>
+ <span class="token comment">// 配置别名</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">alias</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">find</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^~</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+        <span class="token literal-property property">replacement</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">find</span><span class="token operator">:</span> <span class="token string">&quot;@&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">replacement</span><span class="token operator">:</span> <span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;src&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">find</span><span class="token operator">:</span> <span class="token string">&quot;@ASS&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">replacement</span><span class="token operator">:</span> <span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&quot;src/assets&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token operator">...</span> 
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token operator">...</span>
+
+<span class="token literal-property property">css</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">preprocessorOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">less</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">modifyVars</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">hack</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">true; @import &quot;@ASS/css/theme.less&quot;;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token operator">...</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><p>实践后的效果：</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/51f2e8a0877045a4a2d4785d49743b44~tplv-k3u1fbpfcp-watermark.image" alt="Screenshot 2021-04-04 at 4.56.01 PM.png"></p> <h3 id="_4-4-使用rollup的打包插件"><a href="#_4-4-使用rollup的打包插件" class="header-anchor">#</a> 4.4 使用rollup的打包插件</h3> <div class="language- extra-class"><pre><code>类比webpack里面的插件：copy-webpack-plugin，rollup里面相应的插件为：rollup-plugin-copy，那如何在vite2里面实现静态文件，跳过打包，直接复制到dist里面。
+</code></pre></div><p>首先 npm i -D rollup-plugin-copy;</p> <p>接着在vite.config.ts里面配置；</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// vite.config.ts</span>
+
+<span class="token operator">...</span>
+<span class="token keyword">import</span> copy <span class="token keyword">from</span> <span class="token string">&quot;rollup-plugin-copy&quot;</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+<span class="token operator">...</span>
+<span class="token comment">// 插件配置地方</span>
+<span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token operator">...</span>
+    <span class="token comment">// When compiling the project, copy the static file into the dist directory</span>
+    <span class="token function">copy</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">targets</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> <span class="token literal-property property">src</span><span class="token operator">:</span> <span class="token string">&quot;static/*&quot;</span><span class="token punctuation">,</span> <span class="token literal-property property">dest</span><span class="token operator">:</span> <span class="token string">&quot;dist/static&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">hook</span><span class="token operator">:</span> <span class="token string">&quot;writeBundle&quot;</span><span class="token punctuation">,</span> <span class="token comment">// notice here</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token operator">...</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>实现后的：</p> <p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/136bbd6d63194a9d8d172d2e6f6e5870~tplv-k3u1fbpfcp-watermark.image" alt="dist.png"></p> <h3 id="_4-5-代码统一规范"><a href="#_4-5-代码统一规范" class="header-anchor">#</a> 4.5 代码统一规范</h3> <p>加入基本eslint 、stylelint、 prettier 等配置实现代码统一，<a href="https://jkcs.common.com.cn/learning/h5/vite2-vue2-vant2-ts" target="_blank" rel="noopener noreferrer">具体详见<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="五、vite-config-ts配置详解"><a href="#五、vite-config-ts配置详解" class="header-anchor">#</a> 五、vite.config.ts配置详解</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> defineConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vite'</span>
+<span class="token keyword">import</span> vue <span class="token keyword">from</span> <span class="token string">'@vitejs/plugin-vue'</span>
+<span class="token keyword">import</span> path <span class="token keyword">from</span> <span class="token string">'path'</span>
+
+<span class="token comment">/*
+  //* 也可以使用函数来进行判断是否要根据模式做一些处理
+  @params {
+    command: 'build' | 'serve';
+    mode: string;
+  }
+  @example
+
+  export default ({ command, mode }) =&gt; {
+    return defineConfig({})
+  }
+*/</span>
+
+<span class="token comment">// https://vitejs.dev/config/</span>
+<span class="token comment">// 这个函数就做了一个添加类型的作用</span>
+<span class="token comment">/*
+  export function defineConfig(config: UserConfigExport): UserConfigExport {
+    return config
+  }
+*/</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 类型: string</span>
+  <span class="token comment">// default: process.cwd()</span>
+  <span class="token comment">// 项目根目录，可以是一个绝对路径，或者是一个相对于该配置文件本身的路径</span>
+  <span class="token literal-property property">root</span><span class="token operator">:</span> process<span class="token punctuation">.</span><span class="token function">cwd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token comment">// 类型: string</span>
+  <span class="token comment">// default: /,</span>
+  <span class="token comment">// 开发或者生产环境服务的公共基础路径，合法的值包括</span>
+  <span class="token comment">/*
+    1. 绝对url路径名，如`/foo/`
+    2. 完整的url，如`https://foo.com/`
+    3. 空字符串或`./`（用于开发环境）
+  */</span>
+  <span class="token literal-property property">base</span><span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 类型: string,</span>
+  <span class="token comment">// 默认: command为serve时默认为`development`，为build时默认为`production`</span>
+  <span class="token comment">// 在配置中指明将会把`serve`和`build`时的模式都覆盖掉</span>
+  <span class="token comment">// 可以通过命令行`--mode`来重写</span>
+  <span class="token literal-property property">mode</span><span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 类型: Record&lt;string, any&gt;</span>
+  <span class="token comment">// 定义全局变量替换方式，每项在开发时会被定义为全局变量，而在构建时则是静态替换</span>
+  <span class="token comment">/*
+    1. 从 2.0.0-beta.70 版本开始，字符串值将作为一个直接的表达式，所以如果定义为了一个字符串常量，它需要被显式地引用（例如：通过 JSON.stringify）
+    2. 替换知会在匹配到周围是单词边界(\b)时执行
+  */</span>
+  <span class="token literal-property property">define</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">123</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">/*
+    interface Plugin extends RollupPlugin {
+      enforce?: 'pre' | 'post',
+      apply?: 'serve' | 'build',
+      config?: (config: UserConfig, env: ConfigEnv) =&gt; UserConfig | null | void,
+      configResolved?: (config: ResolvedConfig) =&gt; void,
+      configureServer?: ServerHook,
+      transformIndexHtml?: IndexHtmlTransform,
+      handleHotUpdate?(
+        ctx: HmrContext
+      ): Array&lt;ModuleNode&gt; | void | Promise&lt;Array&lt;ModuleNode&gt; | void&gt;,
+      resolveId?(
+        this: PluginContext,
+        source: string,
+        importer: string | undefined,
+        options: { custom?: CustomPluginOptions },
+        ssr?: boolean
+      ): Promise&lt;ResolveIdResult&gt; | ResolveIdResult
+      load?(
+        this: PluginContext,
+        id: string,
+        ssr?: boolean
+      ): Promise&lt;LoadResult&gt; | LoadResult
+      transform?(
+        this: TransformPluginContext,
+        code: string,
+        id: string,
+        ssr?: boolean
+      ): Promise&lt;TransformResult&gt; | TransformResult
+        }
+  */</span>
+  <span class="token comment">// 类型：(Plugin | Plugin[])[]</span>
+  <span class="token comment">// 需要用的的插件，配置模式的时候在这儿配置</span>
+  <span class="token comment">/*
+    @example
+      vue: 
+        ```ts
+          import vue from '@vitejs/plugin-vue'
+          ...
+
+          plugins: [vue()]
+        ```
+      react:
+        ```ts
+          import reactRefresh from '@vitejs/plugin-react-refresh'
+          ...
+
+          plugins: [reactRefresh()]
+        ```
+  */</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">vue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 类型: string</span>
+  <span class="token comment">// 默认: public</span>
+  <span class="token comment">// 作为静态资源服务的文件夹。这个目录中的文件会再开发中被服务于 /，在构建时，会被拷贝到 outDir 根目录，并没有转换，永远只是复制到这里。该值可以是文件系统的绝对路径，也可以是相对于项目根的路径。</span>
+  <span class="token literal-property property">publicDir</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token comment">// 解析配置</span>
+  <span class="token literal-property property">resolve</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 类型: Record&lt;string, string&gt; | Array&lt;{ find: string | RegExp, replacement: string }&gt;</span>
+    <span class="token comment">// 别名</span>
+    <span class="token comment">// 将会被传递到 @rollup/plugin-alias 作为它的 entries。也可以是一个对象，或一个 { find, replacement } 的数组</span>
+    <span class="token comment">// 当使用文件系统路径的别名时，请始终使用绝对路径。相对路径作别名值将按原样使用导致不会解析到文件系统路径中。</span>
+    <span class="token literal-property property">alias</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">'@'</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'src'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string[]</span>
+    <span class="token comment">// 如果你在你的应用程序中有相同依赖的副本（比如monorepos），使用这个选项来强制vite总是将列出的依赖关系解析到相同的副本（从项目根目录）</span>
+    <span class="token literal-property property">dedupe</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string[]</span>
+    <span class="token comment">// 在解析包的情景导出时允许的附加条件</span>
+    <span class="token comment">/*
+      一个带有情景导出的包可能在它的package.json中有以下exports字段
+      ```json
+        {
+          &quot;exports&quot;: {
+            &quot;.&quot;: {
+              &quot;import&quot;: &quot;./index.esm.js&quot;,
+              &quot;require&quot;: &quot;./index.cjs.js&quot;
+            }
+          }
+        }
+      ```
+      在这里，`import`和`require`被称为‘情景’。情景可以嵌套，并且应该从最特定的到最不特定的指定。
+    */</span>
+    <span class="token comment">// Vite 有一个“允许的情景”列表和并且会匹配列表中第一个情景。默认允许的情景是：import，module，browser，default，和基于当前情景为 production/development。resolve.conditions 配置项使得可以指定其他允许的情景。</span>
+    <span class="token literal-property property">conditions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string[],</span>
+    <span class="token comment">// 默认: ['module', 'jsnext:main', 'jsnext']</span>
+    <span class="token comment">// `package.json`中，在解析包的入口点时尝试的字段列表。注意，这比从`exports`字段解析的情景导出优先级低。</span>
+    <span class="token comment">// 如果一个入口点从`exports`成功解析，主字段将被忽略</span>
+    <span class="token literal-property property">mainFields</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string[]</span>
+    <span class="token comment">// 默认: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']</span>
+    <span class="token comment">// 导入时想要省略的扩展名列表。</span>
+    <span class="token comment">// 注意：不建议忽略自定义导入类型的扩展名（例如：`.vue`），因为它会干扰IDE和类型支持</span>
+    <span class="token literal-property property">extensions</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// css配置</span>
+  <span class="token literal-property property">css</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*
+      @types
+
+      ```ts
+      interface CSSModulesOptions {
+        scopeBehaviour?: 'global' | 'local'
+        globalModulePaths?: string[]
+        generateScopedName?:
+          | string
+          | ((name: string, filename: string, css: string) =&gt; string)
+        hashPrefix?: string
+        //* 默认：'camelCaseOnly'
+        localsConvention?: 'camelCase' | 'camelCaseOnly' | 'dashes' | 'dashesOnly'
+      }
+      ```
+    */</span>
+    <span class="token comment">// 配置`css modules`的行为，选项将被传递给`postcss-modules`</span>
+    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string | (postcss.ProcessOptions &amp; { plugins?: postcss.Plugin[] })</span>
+    <span class="token comment">// 内联的PostCss配置（格式同postcss.config.js），或者一个（默认基于项目根目录的）自定义的PostCss配置路径。</span>
+    <span class="token comment">// 其路径搜索是通过`postcss-load-config`实现的</span>
+    <span class="token comment">//* 注意：如果提供来该内联配置，vite将不会搜索其他PostCss配置源</span>
+    <span class="token literal-property property">postcss</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: Record&lt;string, object&gt;</span>
+    <span class="token comment">/*
+      指定传递给CSS预处理器的选项，例如：
+      ```js
+        export default {
+          css: {
+            preprocessorOptions: {
+              scss: {
+                additionalData: `$injectedColor: orange;`
+              }
+            }
+          }
+        }
+      ```
+    */</span>
+    <span class="token literal-property property">preprocessorOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// json配置</span>
+  <span class="token literal-property property">json</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: true</span>
+    <span class="token comment">// 是否支持从`.json`文件中进行按名导入</span>
+    <span class="token literal-property property">namedExports</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: false</span>
+    <span class="token comment">// 若设置为 true，导入的 JSON 会被转换为 export default JSON.parse(&quot;...&quot;) 会比转译成对象字面量性能更好，尤其是当 JSON 文件较大的时候</span>
+    <span class="token comment">//* 开启此项，则会禁用按名导入</span>
+    <span class="token literal-property property">stringify</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// esbuild配置（vite使用了esbuild来进行编译）</span>
+  <span class="token comment">// 类型: ESBuildOptions | false</span>
+  <span class="token comment">/*
+    ESBuildOptions继承自esbuild转换选项(https://esbuild.github.io/api/#transform-api)
+    最常见的用例是自定义JSX
+
+    ```js
+    export default {
+      esbuild: {
+        jsxFactory: 'h',
+        jsxFragment: 'Fragment'
+      }
+    }
+    ```
+    默认情况下，ESbuild 应用在 ts、jsx、tsx 文件。你可以通过 esbuild.include 和 esbuild.exclude 对其进行配置，它们两个配置的类型是string | RegExp | (string | RegExp)[]。
+    设置成 false 可以禁用 ESbuild 转换（默认应用于 .ts. .tsx 和 .jsx 文件）。
+    
+  */</span>
+
+  <span class="token comment">/*
+    此外，你还可以通过esbuild.jsxInject来自动为每一个被 ESbuild 转换的文件注入 JSX helper。
+
+    ```js
+    export default {
+      esbuild: {
+        jsxInject: `import React from 'react'`
+      }
+    }
+    ```
+  */</span>
+  <span class="token literal-property property">esbuild</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 静态文件处理配置</span>
+  <span class="token comment">// 类型: string | RegExp | (string | RegExp)[]</span>
+  <span class="token comment">// 相关内容（https://cn.vitejs.dev/guide/assets.html）</span>
+  <span class="token comment">// 指定其他文件类型作为静态资源处理（这样导入它们就会返回解析后的 URL）</span>
+  <span class="token literal-property property">assetsInclude</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  <span class="token comment">// 日志级别配置</span>
+  <span class="token comment">// 类型: 'info' | 'warn' | 'error' | 'silent'</span>
+  <span class="token comment">// 调整控制台输出的级别，默认为`info`</span>
+  <span class="token literal-property property">logLevel</span><span class="token operator">:</span> <span class="token string">'info'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 是否清屏</span>
+  <span class="token comment">// 类型: boolean</span>
+  <span class="token comment">// 默认: true</span>
+  <span class="token comment">// 设为 false 可以避免 Vite 清屏而错过在终端中打印某些关键信息。命令行模式下请通过 --clearScreen false 设置。</span>
+  <span class="token literal-property property">clearScreen</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 服务相关配置</span>
+  <span class="token literal-property property">server</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 类型: string</span>
+    <span class="token comment">// 指定服务器主机名</span>
+    <span class="token literal-property property">host</span><span class="token operator">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: number</span>
+    <span class="token comment">// 指定服务器端口。</span>
+    <span class="token comment">//* 注意：如果端口已经被使用，Vite 会自动尝试下一个可用的端口，所以这可能不是服务器最终监听的实际端口。</span>
+    <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">10086</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 设为true时若端口已被占用则会直接退出，而不是尝试下一个可用端口</span>
+    <span class="token literal-property property">strictPort</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean | https.ServerOptions</span>
+    <span class="token comment">// 启用 TLS + HTTP/2。注意当 server.proxy option 也被使用时，将会仅使用 TLS。</span>
+    <span class="token comment">// 这个值也可以是一个传递给 https.createServer() 的 选项对象。</span>
+    <span class="token literal-property property">https</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean | string</span>
+    <span class="token comment">// 在服务器启动时自动在浏览器中打开应用程序</span>
+    <span class="token comment">/*
+      注意: 当此值为字符串时，会被用作URL的路径名
+
+      ```js
+        export default {
+          server: {
+            open: '/docs/index.html'
+          }
+        }
+      ```
+    */</span>
+    <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 本地服务代理</span>
+    <span class="token comment">// 类型: Record&lt;string, string | ProxyOptions&gt;</span>
+    <span class="token comment">// 为开发服务器配置自定义代理规则。期望接收一个 { key: options } 对象。如果 key 值以 ^ 开头，将会被解释为 RegExp。</span>
+    <span class="token comment">/*
+      使用`http-proxy`，完整选项详见https://github.com/http-party/node-http-proxy#options
+
+      @example
+
+      ```js
+        export default {
+          server: {
+            proxy: {
+              // 字符串简写写法
+              '/foo': 'http://localhost:4567/foo',
+              // 选项写法
+              '/api': {
+                target: 'http://jsonplaceholder.typicode.com',
+                changeOrigin: true,
+                rewrite: (path) =&gt; path.replace(/^\/api/, '')
+              },
+              // 正则表达式写法
+              '^/fallback/.*': {
+                target: 'http://jsonplaceholder.typicode.com',
+                changeOrigin: true,
+                rewrite: (path) =&gt; path.replace(/^\/fallback/, '')
+              }
+            }
+          }
+        }
+
+      ```
+    */</span>
+    <span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean | CorsOptions</span>
+    <span class="token comment">// 为开发服务器配置 CORS。默认启用并允许任何源，传递一个 选项对象 来调整行为或设为 false 表示禁用。</span>
+    <span class="token literal-property property">cors</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 相关内容: https://cn.vitejs.dev/guide/dep-pre-bundling.html</span>
+    <span class="token comment">// 设置为`true`强制使依赖预构建</span>
+    <span class="token literal-property property">force</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean | { protocol?: string, host?: string, port?: number, path?: string, timeout?: number, overlay?: boolean }</span>
+    <span class="token comment">// 禁用或配置HMR链接（用于HMR websocket 必须使用不同的http服务器地址的情况）</span>
+    <span class="token comment">// 设置`server.hmr.overlay`为`false`可以禁用服务器错误遮罩层</span>
+    <span class="token literal-property property">hmr</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: object</span>
+    <span class="token comment">// 传递给`chokidar`的文件系统监视器选项</span>
+    <span class="token comment">// https://github.com/paulmillr/chokidar#api</span>
+    <span class="token literal-property property">watch</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 构建的配置</span>
+  <span class="token literal-property property">build</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 类型: string</span>
+    <span class="token comment">// 默认: modules</span>
+    <span class="token comment">// 相关内容：https://cn.vitejs.dev/guide/build.html#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%80%A7</span>
+    <span class="token comment">// 选项: https://esbuild.github.io/api/#target</span>
+    <span class="token comment">/*
+      设置最终构建的浏览器兼容目标。默认值是一个 Vite 特有的值，'modules'，这是指 支持原生 ES 模块的浏览器。
+      另一个特殊值是 “esnext” —— 即指执行 minify 转换（作最小化压缩）并假设有原生动态导入支持。
+      转换过程将会由 esbuild 执行，并且此值应该是一个合法的 esbuild 目标选项。自定义目标也可以是一个 ES 版本（例如：es2015）、一个浏览器版本（例如：chrome58）或是多个目标组成的一个数组。
+      注意，如果代码包含不能被 esbuild 安全地编译的特性，那么构建将会失败。查看 esbuild 文档 获取更多细节。
+    */</span>
+    <span class="token literal-property property">target</span><span class="token operator">:</span> <span class="token string">'modules'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string</span>
+    <span class="token comment">// 默认: dist</span>
+    <span class="token comment">// 指定输出路径（相对于项目根目录）</span>
+    <span class="token literal-property property">outDir</span><span class="token operator">:</span> <span class="token string">'dist'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string</span>
+    <span class="token comment">// 默认: assets</span>
+    <span class="token comment">// 指定生成静态资源的存放路径（相对于build.outDir）</span>
+    <span class="token literal-property property">assetsDir</span><span class="token operator">:</span> <span class="token string">'assets'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: number</span>
+    <span class="token comment">// 默认: 4096（4kb）</span>
+    <span class="token comment">// 小于此阈值的导入或引用资源将内联为 base64 编码，以避免额外的 http 请求。设置为 0 可以完全禁用此项。</span>
+    <span class="token literal-property property">assetsInlineLimit</span><span class="token operator">:</span> <span class="token number">4096</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: true</span>
+    <span class="token comment">// 启用/禁用 CSS 代码拆分。当启用时，在异步 chunk 中导入的 CSS 将内联到异步 chunk 本身，并在块加载时插入。</span>
+    <span class="token comment">// 如果禁用，整个项目中的所有 CSS 将被提取到一个 CSS 文件中。</span>
+    <span class="token literal-property property">cssCodeSplit</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: false</span>
+    <span class="token comment">// 构建后是否生成sourceMap文件</span>
+    <span class="token literal-property property">sourcemap</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: RollupOptions</span>
+    <span class="token comment">// https://rollupjs.org/guide/en/#big-list-of-options</span>
+    <span class="token comment">// 自定义底层的 Rollup 打包配置。这与从 Rollup 配置文件导出的选项相同，并将与 Vite 的内部 Rollup 选项合并。查看 Rollup 选项文档 获取更多细节。</span>
+    <span class="token comment">// https://rollupjs.org/guide/en/#big-list-of-options</span>
+    <span class="token literal-property property">rollupOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: RollupCommonJSOptions</span>
+    <span class="token comment">// https://github.com/rollup/plugins/tree/master/packages/commonjs#options</span>
+    <span class="token comment">// 传递给 @rollup/plugin-commonjs 插件的选项。</span>
+    <span class="token comment">// https://github.com/rollup/plugins/tree/master/packages/commonjs</span>
+    <span class="token literal-property property">commonjsOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: { entry: string, name?: string, formats?: ('es' | 'cjs' | 'umd' | 'iife')[] }</span>
+    <span class="token comment">// 相关内容: https://cn.vitejs.dev/guide/build.html#%E5%BA%93%E6%A8%A1%E5%BC%8F</span>
+    <span class="token comment">//* 构建为库。entry 是必须的因为库不可以使用 HTML 作为入口。name 则是暴露的全局变量，并且在 formats 包含 'umd' 或 'iife' 时是必须的。默认 formats 是 ['es', 'umd']。</span>
+    <span class="token literal-property property">lib</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: false</span>
+    <span class="token comment">// 相关内容: https://cn.vitejs.dev/guide/backend-integration.html</span>
+    <span class="token comment">// 当设置为 true，构建后将会生成 manifest.json 文件，映射没有被 hash 的资源文件名和它们的 hash 版本。可以为一些服务器框架渲染时提供正确的资源引入链接。</span>
+    <span class="token literal-property property">manifest</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean | 'terser' | 'esbuild'</span>
+    <span class="token comment">// 默认: 'terser'</span>
+    <span class="token comment">// 设置为 false 可以禁用最小化混淆，或是用来指定使用哪种混淆器。默认为 Terser，虽然 Terser 相对较慢，但大多数情况下构建后的文件体积更小。ESbuild 最小化混淆更快但构建后的文件相对更大。</span>
+    <span class="token comment">// https://github.com/terser/terser</span>
+    <span class="token literal-property property">minify</span><span class="token operator">:</span> <span class="token string">'terser'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: TerserOptions</span>
+    <span class="token comment">// 传递给Terser的更多minify选项</span>
+    <span class="token comment">// https://terser.org/docs/api-reference#minify-options</span>
+    <span class="token literal-property property">terserOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: true</span>
+    <span class="token comment">// 设置为 false 来禁用将构建后的文件写入磁盘。这常用于 编程式地调用 build() 在写入磁盘之前，需要对构建后的文件进行进一步处理。</span>
+    <span class="token comment">// https://cn.vitejs.dev/guide/api-javascript.html#build</span>
+    <span class="token literal-property property">write</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: 若outDir在root目录下，则为true</span>
+    <span class="token comment">// 默认情况下，若 outDir 在 root 目录下，则 Vite 会在构建时清空该目录。若 outDir 在根目录之外则会抛出一个警告避免意外删除掉重要的文件。可以设置该选项来关闭这个警告。该功能也可以通过命令行参数 --emptyOutDir 来使用。</span>
+    <span class="token literal-property property">emptyOutDir</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: boolean</span>
+    <span class="token comment">// 默认: true</span>
+    <span class="token comment">// 启用/禁用 brotli 压缩大小报告。压缩大型输出文件可能会很慢，因此禁用该功能可能会提高大型项目的构建性能。</span>
+    <span class="token literal-property property">brotliSize</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: number</span>
+    <span class="token comment">// 默认: 500</span>
+    <span class="token comment">// chunk大小警告的限制，以kbs为单位</span>
+    <span class="token literal-property property">chunkSizeWarningLimit</span><span class="token operator">:</span> <span class="token number">500</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 依赖优化</span>
+  <span class="token literal-property property">optimizeDeps</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 入口</span>
+    <span class="token comment">// 类型: string | string[]</span>
+    <span class="token comment">// 默认情况下，Vite 会抓取你的 index.html 来检测需要预构建的依赖项。如果指定了 `build.rollupOptions.input`，Vite 将转而去抓取这些入口点。</span>
+    <span class="token comment">// 如果这两者都不适合你的需要，则可以使用此选项指定自定义条目 - 该值需要遵循 fast-glob 模式 ，或者是相对于 vite 项目根的模式数组。这将覆盖掉默认条目推断。</span>
+    <span class="token comment">// https://github.com/mrmlnc/fast-glob#basic-syntax</span>
+    <span class="token literal-property property">entries</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string[]</span>
+    <span class="token comment">// 在预构建中强制排除的依赖项</span>
+    <span class="token literal-property property">exclude</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 类型: string[]</span>
+    <span class="token comment">// 默认情况下，不在 node_modules 中的，链接的包不会被预构建。使用此选项可强制预构建链接的包。</span>
+    <span class="token literal-property property">include</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br></div></div><h2 id="推荐的官方文档"><a href="#推荐的官方文档" class="header-anchor">#</a> 推荐的官方文档</h2> <p><a href="https://zhuanlan.zhihu.com/p/353601634" target="_blank" rel="noopener noreferrer">vue-cli 迁移 vite2 实践小结<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://zhuanlan.zhihu.com/p/360109945" target="_blank" rel="noopener noreferrer">Vite 2.0 初探<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://zhuanlan.zhihu.com/p/349271585" target="_blank" rel="noopener noreferrer">备战2021：Vite2项目最佳实践<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://zhuanlan.zhihu.com/p/352216610" target="_blank" rel="noopener noreferrer">重构于Vite<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://juejin.cn/post/7064853960636989454" target="_blank" rel="noopener noreferrer">深入理解Vite核心原理<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://juejin.cn/post/7080347066811023397" target="_blank" rel="noopener noreferrer">Vite 官方教程插件实现与踩坑<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">3/31/2022, 9:29:57 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/word/event-loop.html" class="prev">
+          第四章、event-loop
+        </a></span> <span class="next"><a href="/word/wxmp-next.html">
+          第二章、xx-next-code
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-ff035a48 data-v-2a0acbb5><li class="level-2" data-v-ff035a48><a href="/word/vite.html#总方针-是什么-从哪里来-要到哪里去" class="sidebar-link reco-side-总方针-是什么-从哪里来-要到哪里去" data-v-ff035a48>总方针：是什么？从哪里来？要到哪里去？</a></li><li class="level-2" data-v-ff035a48><a href="/word/vite.html#一、是什么" class="sidebar-link reco-side-一、是什么" data-v-ff035a48>一、是什么？</a></li><li class="level-2" data-v-ff035a48><a href="/word/vite.html#二、从哪里来" class="sidebar-link reco-side-二、从哪里来" data-v-ff035a48>二、从哪里来？</a></li><li class="level-2" data-v-ff035a48><a href="/word/vite.html#三、要到哪里去" class="sidebar-link reco-side-三、要到哪里去" data-v-ff035a48>三、要到哪里去？</a></li><li class="level-2" data-v-ff035a48><a href="/word/vite.html#四、如何实践" class="sidebar-link reco-side-四、如何实践" data-v-ff035a48>四、如何实践？</a></li><li class="level-3" data-v-ff035a48><a href="/word/vite.html#_4-1-开发环境秒级更新" class="sidebar-link reco-side-_4-1-开发环境秒级更新" data-v-ff035a48>4.1 开发环境秒级更新</a></li><li class="level-3" data-v-ff035a48><a href="/word/vite.html#_4-2-任意屏幕适配" class="sidebar-link reco-side-_4-2-任意屏幕适配" data-v-ff035a48>4.2 任意屏幕适配</a></li><li class="level-3" data-v-ff035a48><a href="/word/vite.html#_4-3-实现vant2-自定义主题色" class="sidebar-link reco-side-_4-3-实现vant2-自定义主题色" data-v-ff035a48>4.3 实现vant2 自定义主题色</a></li><li class="level-3" data-v-ff035a48><a href="/word/vite.html#_4-4-使用rollup的打包插件" class="sidebar-link reco-side-_4-4-使用rollup的打包插件" data-v-ff035a48>4.4 使用rollup的打包插件</a></li><li class="level-3" data-v-ff035a48><a href="/word/vite.html#_4-5-代码统一规范" class="sidebar-link reco-side-_4-5-代码统一规范" data-v-ff035a48>4.5 代码统一规范</a></li><li class="level-2" data-v-ff035a48><a href="/word/vite.html#五、vite-config-ts配置详解" class="sidebar-link reco-side-五、vite-config-ts配置详解" data-v-ff035a48>五、vite.config.ts配置详解</a></li><li class="level-2" data-v-ff035a48><a href="/word/vite.html#推荐的官方文档" class="sidebar-link reco-side-推荐的官方文档" data-v-ff035a48>推荐的官方文档</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.1209b5ce.js" defer></script><script src="/assets/js/4.de537007.js" defer></script><script src="/assets/js/1.f2ff10e3.js" defer></script><script src="/assets/js/74.6bf76e46.js" defer></script>
+  </body>
+</html>
